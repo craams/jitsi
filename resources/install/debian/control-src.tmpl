@@ -1,0 +1,106 @@
+Source: _PACKAGE_NAME_
+Section: net
+Priority: optional
+Maintainer: Damian Minkov <damencho@jitsi.org>
+Uploaders: Emil Ivov <emcho@jitsi.org>
+Homepage: _APP_WEB_
+Build-Depends: debhelper (>= 9), javahelper,
+               dpkg-dev (>= 1.16.1),
+               default-jdk,
+               ant,
+               ant-optional,
+               ant-contrib-cpptasks,
+               ant-contrib,
+               maven,
+               autotools-dev,
+               libavutil-dev,
+               libavcodec-dev,
+               libavformat-dev,
+               libavfilter-dev,
+               libswscale-dev,
+               libvpx-dev,
+               libxpp3-java,
+               libjzlib-java,
+               libbcprov-java,
+               libjna-java,
+               libcommons-codec-java,
+               liblog4j1.2-java,
+               libjgoodies-forms-java,
+               libjmdns-java,
+               libdnsjava-java,
+               libmac-widgets-java,
+               libfelix-main-java,
+               libfelix-framework-java,
+               junit,
+               libcommons-logging-java,
+               liblaf-widget-java,
+               libhttpcore-java,
+               libhttpmime-java,
+               libhttpclient-java,
+               libjson-simple-java,
+               libdbus-java,
+               libeasymock-java,
+               libxt-dev,
+               libxtst-dev,
+               libxv-dev,
+               libmp3lame-dev,
+               yasm,
+               libx264-dev,
+               libdbus-1-dev,
+               libopus-dev,
+               libasound2-dev,
+               libspeexdsp-dev,
+               libspeex-dev,
+               libunbound-dev,
+               libxss-dev,
+               libgtk2.0-dev,
+               libglib2.0-dev,
+               libpulse-dev,
+               libgoogle-collections-java,
+               glassfish-activation,
+               glassfish-mail,
+               libbcpkix-java
+Standards-Version: 3.9.4
+
+Package: _PACKAGE_NAME_
+Architecture: all
+Depends: ${misc:Depends},
+         lib_PACKAGE_NAME_-jni (>= ${source:Version}),
+         default-jre | java6-runtime,
+         libunixsocket-java,
+         libhttpcore-java,
+         liblog4j1.2-java,
+         libjmdns-java,
+         libdnsjava-java,
+         libmac-widgets-java,
+         libfelix-main-java,
+         libfelix-framework-java,
+         libhttpclient-java,
+         libhttpmime-java,
+         libcommons-logging-java,
+         libcommons-codec-java,
+         liblaf-widget-java,
+         libdbus-java,
+         libxpp3-java,
+         libjzlib-java,
+         libbcprov-java,
+         libjna-java,
+         libjgoodies-forms-java,
+         libjson-simple-java
+Recommends: ${java:Recommends}
+Description: VoIP and Instant Messaging client
+ _APP_NAME_ is an application that allows you to do audio/video
+ conversations over the Internet through the SIP and XMPP/Jabber protocol,
+ as well as chat with your friends using some of the most popular instant
+ messaging protocols such as SIP/SIMPLE, XMPP/Jabber, AIM/ICQ, Yahoo and others.
+
+Package: lib_PACKAGE_NAME_-jni
+Section: libs
+Architecture: amd64 i386
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: _APP_NAME_ JNI library
+ These are the jni bindings for  _APP_NAME_ the Java VoIP
+ and Instant Messaging client. Libraries to access audio and video devices.
+ Native binaries used to render the video and detect network configuration
+ changes. Binaries for audio codecs like opus and g722. Global shortcuts,
+ notifications and hid devices control.

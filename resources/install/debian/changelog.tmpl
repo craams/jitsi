@@ -1,0 +1,54 @@
+_PACKAGE_NAME_ (_VERSION_) unstable; urgency=low
+
+  * Removes use of maven build for bccontrib package.
+
+ -- Damian Minkov <damencho@jitsi.org>  _DATE_
+
+jitsi (2.3.4678.9772-1) unstable; urgency=low
+
+  * Removes embedded bouncycastle package.
+  * Patches joscar to use the latest version 1.48 of bcprov.
+  * Adds autotools-dev dependincy to deal with some warnings
+    for old build files.
+  * Fixes building twice.
+
+ -- Damian Minkov <damencho@jitsi.org>  Wed, 12 Jun 2013 11:02:34 +0300
+
+jitsi (2.1.4541.10678-1) unstable; urgency=low
+
+  * Fixes missing dbus headers when building i386 package.
+
+ -- Damian Minkov <damencho@jitsi.org>  Mon, 1 Apr 2013 12:12:17 +0300
+
+jitsi (2.1.4534.10649-1) unstable; urgency=low
+
+  * Removes jdic dependency.
+
+ -- Damian Minkov <damencho@jitsi.org>  Tue, 26 Mar 2013 15:07:14 +0200
+
+jitsi (2.0.4506.10553-1) unstable; urgency=low
+
+  * Renames package jitsi-jni to libjitsi-jni.
+  * Removes jar-not-in-usr-share overrides, not needed anymore.
+  * Moves files from /usr/lib to /usr/share
+  * Rename README.libraries to README.embedded-libraries.
+  * Removes embedded dnsjava package and add dependency to libdnsjava-java.
+  * Removes duplicate entry in copyright.
+
+ -- Damian Minkov <damencho@jitsi.org>  Mon, 18 Mar 2013 16:34:08 +0200
+
+_PACKAGE_NAME_ (1.1.4407.10289-1) unstable; urgency=low
+
+  * Adds README.libraries describing the libraries embedded.
+  * Adds Homepage entry and fixes descriptions.
+  * Updates desktop shortcut, removes obsolete fields.
+  * Adds debian/watch for new source packages.
+  * Removes ffmpeg library and add dependency to libav.
+
+ -- Damian Minkov <damencho@jitsi.org>  Thu, 17 Jan 2013 16:03:58 +0200
+
+_PACKAGE_NAME_ (1.1.4365-1) unstable; urgency=low
+
+  * Initial release. (Closes: #627362)
+
+ -- Damian Minkov <damencho@jitsi.org>  Tue, 18 Dec 2012 11:47:40 +0200

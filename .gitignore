@@ -1,0 +1,12 @@
+classes
+.idea
+sc-bundles
+.gitignore.swp
+*.iws
+.gitignore
+jitsi.iml
+test-reports
+sip-communicator.utest.bin
+release
+lib/accounts.properties
+.DS_Store
